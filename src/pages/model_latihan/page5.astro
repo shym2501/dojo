@@ -1,0 +1,53 @@
+---
+import Page from "../../layouts/Page.astro";
+import { Image } from "astro:assets";
+import img1 from "../../assets/page/page5.jpg";
+---
+
+<Page title="Model Latihan">
+  <div
+    class="flex flex-col bg-white shadow-md rounded-xl px-4 py-6 my-5 mx-4 overflow-y-auto gap-4"
+  >
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2"
+      >Kombinasi Sprint dan Tendangan
+      </span
+    >
+    <div class="flex flex-col bg-white shadow-md rounded-2xl gap-2 bg-cover">
+      <iframe
+        title="Video"
+        class="w-full rounded-2xl"
+        height="200"
+        src="https://drive.google.com/file/d/1R8ggLZaxKzxeR7lAoSxtp-cAMLwB0shl/preview"
+        allow="encrypted-media"
+        allowfullscreen></iframe>
+    </div>
+
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2 mt-1"
+      >Penjelasan</span
+    >
+
+    <div class="pb-4 px-5 text-lg">
+      <p class="text-lg">
+        Cara melakukan gerakan:
+        <ol>
+          <li>
+            1) Posisi awal atlet yaitu posisi start di titik A siap melakukakan sprint.
+          </li>
+          <li>
+            2) Saat pelatih memberikan aba-aba melalui pluit maka atlet segera berlari menuju titik B. 
+          </li>
+          <li>
+            3) Setibanya atlet di titik B maka atlet melanjutkan gerakan tendangan (mae geri. Mawashi geri, nidan geri, sambon geri). 
+          </li>
+          <li>
+            4) Atlet kembali ke posisi semula. 
+          </li>
+        </ol>
+      </p>
+      <Image src={img1} loading="lazy" alt="Dojo Speed" class="w-full"/>
+      <p class="text-lg">
+        Pada gerakan ini gerakan kaki lebih dominan dilatih, gerakan ini berfungsi untuk meningkatkan kecepatan gerakan tendangan atlet.
+      </p>
+    </div>
+  </div>
+</Page>

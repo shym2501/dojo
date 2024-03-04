@@ -1,0 +1,52 @@
+---
+import Page from "../../layouts/Page.astro";
+import { Image } from "astro:assets";
+import img1 from "../../assets/page/page10.jpg";
+import img2 from "../../assets/page/page10.2.jpg";
+---
+
+<Page title="Model Latihan">
+  <div
+    class="flex flex-col bg-white shadow-md rounded-xl px-4 py-6 my-5 mx-4 overflow-y-auto gap-4"
+  >
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2"
+      >Lempar Bola: Menghindar + Menyerang Tsuki
+      </span
+    >
+    <div class="flex flex-col bg-white shadow-md rounded-2xl gap-2 bg-cover">
+      <iframe
+        title="Video"
+        class="w-full rounded-2xl"
+        height="200"
+        src="https://drive.google.com/file/d/1Rawn_SK2_Tr-4Y0ZkQMoxl76SEK6SByf/preview"
+        allow="encrypted-media"
+        allowfullscreen></iframe>
+    </div>
+
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2 mt-1"
+      >Penjelasan</span
+    >
+
+    <div class="pb-4 px-5 text-lg">
+      <p class="text-lg">
+        Cara melakukan gerakan:
+        <ol>
+          <li>
+            1) Atlet dalam posisi kamae, kemudian ketika pelatih melempar bola atlet segera berreaksi untuk menghindar dan langsung melontarkan pukulan (tsuki).
+          </li>
+          <li>
+            2) Setelah melakukan pukulan serangan balik maka atlet kembali pada posisi awal kamae.
+          </li>
+          <li>
+            3) Pengulangan gerakan dan jumlah set berdasarkan program latihan yang diberikan oleh pelatih.
+          </li>
+        </ol>
+      </p>
+      <Image src={img1} loading="lazy" alt="Dojo Speed" class="w-full"/>
+      <Image src={img2} loading="lazy" alt="Dojo Speed" class="w-full"/>
+      <p class="text-lg">
+        Latihan ini digunakan untuk meningkatkan kecepatan reaksi atlet, dimana setelah melakukan reaksi balasan yang cepat dari gerakan lawan.  Sensor gerak menjadi media latihan untuk kecepatan reaksi atlet.
+      </p>
+    </div>
+  </div>
+</Page>

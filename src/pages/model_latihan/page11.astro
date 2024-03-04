@@ -1,0 +1,55 @@
+---
+import Page from "../../layouts/Page.astro";
+import { Image } from "astro:assets";
+import img1 from "../../assets/page/page11.1.jpg";
+import img2 from "../../assets/page/page11.2.jpg";
+---
+
+<Page title="Model Latihan">
+  <div
+    class="flex flex-col bg-white shadow-md rounded-xl px-4 py-6 my-5 mx-4 overflow-y-auto gap-4"
+  >
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2"
+      >4 Penjuru Mata Angin + Tsuki
+      </span
+    >
+    <div class="flex flex-col bg-white shadow-md rounded-2xl gap-2 bg-cover">
+      <iframe
+        title="Video"
+        class="w-full rounded-2xl"
+        height="200"
+        src="https://drive.google.com/file/d/1Rhpcav3epZtMYdSUb_jSQC7edLfWkBUG/preview"
+        allow="encrypted-media"
+        allowfullscreen></iframe>
+    </div>
+
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2 mt-1"
+      >Penjelasan</span
+    >
+
+    <div class="pb-4 px-5 text-lg">
+      <p class="text-lg">
+        Cara melakukan gerakan:
+        <ol>
+          <li>
+            1) Atlet dalam posisi kamae diantara 4 posisi kuns. 
+          </li>
+          <li>
+            2) Ketika aba-aba diberikan oleh pelatih maka atlet segera melakukan gerakan pukulan (gyaku/kisami tsuki) pada masing-masing kuns.
+          </li>
+          <li>
+            3) Jarak kuns dan atlet masing-masing 1 meter.
+          </li>
+          <li>
+            3) Atlet kembali ke posisi semua ketika selesai melakukan gerakan. 
+          </li>
+        </ol>
+      </p>
+      <Image src={img1} loading="lazy" alt="Dojo Speed" class="w-full"/>
+      <Image src={img2} loading="lazy" alt="Dojo Speed" class="w-full"/>
+      <p class="text-lg">
+        Latihan ini bertujuan untuk melatih kecepatan reaksi atlet dalam merespon sensor bunyi ( suara pelatih).  Dalam latihan ini bisa saja pelatih memberi perintah dalam1 kali respon atlet melakukan 2 gerakan pukulan secara cepat. 
+      </p>
+    </div>
+  </div>
+</Page>

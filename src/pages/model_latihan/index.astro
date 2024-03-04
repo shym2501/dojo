@@ -1,215 +1,385 @@
 ---
-import Page from '../../layouts/Page.astro';
+import Page from "../../layouts/Page.astro";
 import { Image } from "astro:assets";
 import img1 from "../../assets/carousel-1.png";
 ---
 
 <Page title="Model Latihan">
-  
-  <div class="flex flex-col bg-white shadow-md rounded-xl px-4 py-6 my-5 mx-4 overflow-y-auto gap-4">
-    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2">Video Pengantar</span>
+  <div
+    class="flex flex-col bg-white shadow-md rounded-xl px-4 py-6 my-5 mx-4 overflow-y-auto gap-4"
+  >
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2"
+      >Video Pengantar</span
+    >
     <div class="flex flex-col bg-white shadow-md rounded-2xl gap-2 bg-cover">
-      <iframe title="Youtube" class="w-full rounded-2xl" height="200" src="https://www.youtube.com/embed/Gifm7ZTogXI" allow="encrypted-media" allowfullscreen></iframe>
+      <iframe
+        title="Youtube"
+        class="w-full rounded-2xl"
+        height="200"
+        src="https://www.youtube.com/embed/Gifm7ZTogXI"
+        allow="encrypted-media"
+        allowfullscreen></iframe>
     </div>
-    
-    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2 mt-1">Materi</span>
-    
-    <div class="hs-accordion-group">
-      <div class="hs-accordion mb-4 border-gray-200 bg-white hs-accordion-active:bg-gray-100 border border-2 hs-accordion-active:border-0 hs-accordion-active:shadow-md rounded-xl" id="hs-active-bordered-heading-one">
-        <button class="hs-accordion-toggle hs-accordion-active:text-blue-800 inline-flex items-center w-full font-semibold text-start text-slate-700 py-3 px-4 hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none" aria-controls="hs-basic-active-bordered-collapse-one">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0 size-6 hs-accordion-active:hidden block">
-            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0 size-6 hs-accordion-active:block hidden rotate-90">
-            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd" />
-          </svg>
-          <div class="flex flex-col">
-            <span class="text-start ms-2 text-lg">1.	Kombinasi Sprint dan Tsuki</span>
-          </div>
-        </button>
-        <div id="hs-basic-active-bordered-collapse-one" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-one">
-          <div class="pb-4 px-5 text-lg">
-            <p class=" text-lg">
-              Cara melakukan gerakan:
-              <ol>
-                <li>1) Mempersiapkan 2 cuns di 2 titik yang berbeda (titik a dan titik b)</li>
-                <li>2) Atlet melakukan persiapan (diawali tiupan pluit untuk melakukan tsuki) dan dilanjut pluit untuk start sprint dari titik a menuju titik b.</li>
-                <li>3) Setelah tiba dititik b atlet melakukan tsuki kembali sebagai akhir dari 1 repetisi latihan. </li>
-              </ol>
-              Pola gerak model:
-            </p>
-            <Image src={img1} loading="eager" alt="Dojo Speed" />
-            <p class=" text-lg">
-              Latihan ini memiliki fungsi untuk meningkatkan kecepatan gerak atlet karate. Fokus gerakan yang dilatih adalah kecepatan kaki dan tangan, fungsi gerakan ini lebih spesifik dapat terlihat saat seorang atlet melakukan gerakan pukulan (gyaku tsuki, kisame tsuki, uraken tsuki dan kombinasi gerakan kisame gyaku tsuki) sebagai toque atlet saat bertanding kumite.  Melibatkan banyak kinerja otot hamstring saat sprint dapat melatih otot yang ada di kaki untuk terbiasa melakukan gerakan dengan cepat.
-            </p>
-          </div>
-        </div>
+
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2 mt-1"
+      >Materi</span
+    >
+
+    <a href="model_latihan/page1"
+      class="active:text-blue-300 bg-gray-200 hover:bg-slate-700 rounded-2xl inline-flex items-center w-full font-semibold text-start text-slate-700 hover:text-gray-200 py-3 px-4 disabled:opacity-50 disabled:pointer-events-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="flex-shrink-0 size-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-start ms-2 text-lg"
+          >1. Kombinasi Sprint dan Tsuki</span
+        >
       </div>
-      
-      <div class="hs-accordion mb-4 border-gray-200 bg-white hs-accordion-active:bg-gray-100 border border-2 hs-accordion-active:border-0 hs-accordion-active:shadow-md rounded-xl" id="hs-active-bordered-heading-one">
-        <button class="hs-accordion-toggle hs-accordion-active:text-blue-800 inline-flex items-center w-full font-semibold text-start text-slate-700 py-3 px-4 hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none" aria-controls="hs-basic-active-bordered-collapse-one">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0 size-6 hs-accordion-active:hidden block">
-            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0 size-6 hs-accordion-active:block hidden rotate-90">
-            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd" />
-          </svg>
-          <div class="flex flex-col">
-            <span class="text-start ms-2 text-lg">2.	Age Uke + Nidan Tsuki</span>
-          </div>
-        </button>
-        <div id="hs-basic-active-bordered-collapse-one" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-one">
-          <div class="pb-4 px-5 text-lg">
-            <p class=" text-lg">
-              Cara melakukan gerakan:
-              <ol>
-                <li>1) Atlet dalam posisi kamae. Kemudian setelah mendapat perintah atau aba-aba dari pelatih maka atlet segera melakukan gerakn age uke ditambah gerakan nidan tsuki.</li>
-                <li>2) Jumlah repetisi dan set gerakan sesuai dengan program latihan yang dibuat oleh pelatih.</li>
-              </ol>
-              Setelah melakukan gerakan atlet kembali ke posisi awal kamae. Dapat dilihat pada gambar di bawah pola gerak model tersebut.
-            </p>
-            <Image src={img1} loading="eager" alt="Dojo Speed" />
-            <p class=" text-lg">
-              Tujuan dari gerakan ini yaitu untuk melatih peningkatan kecepatan gerak pukulan atlet setelah menangkis serangan lawan.
-            </p>
-          </div>
-        </div>
+    </a>
+
+    <a href="model_latihan/page2"
+      class="active:text-blue-300 bg-gray-200 hover:bg-slate-700 rounded-2xl inline-flex items-center w-full font-semibold text-start text-slate-700 hover:text-gray-200 py-3 px-4 disabled:opacity-50 disabled:pointer-events-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="flex-shrink-0 size-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-start ms-2 text-lg"
+          >2. Age Uke + Nidan Tsuki</span
+        >
       </div>
-      
-      <div class="hs-accordion mb-4 border-gray-200 bg-white hs-accordion-active:bg-gray-100 border border-2 hs-accordion-active:border-0 hs-accordion-active:shadow-md rounded-xl" id="hs-active-bordered-heading-one">
-        <button class="hs-accordion-toggle hs-accordion-active:text-blue-800 inline-flex items-center w-full font-semibold text-start text-slate-700 py-3 px-4 hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none" aria-controls="hs-basic-active-bordered-collapse-one">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0 size-6 hs-accordion-active:hidden block">
-            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0 size-6 hs-accordion-active:block hidden rotate-90">
-            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd" />
-          </svg>
-          <div class="flex flex-col">
-            <span class="text-start ms-2 text-lg">3.	Ude Uke + Nidan Tsuki</span>
-          </div>
-        </button>
-        <div id="hs-basic-active-bordered-collapse-one" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-one">
-          <div class="pb-4 px-5 text-lg">
-            <p class=" text-lg">
-              Cara melakukan gerakan:
-              <ol>
-                <li>1) Atlet dalam posisi kamae dan siap menunggu aba-aba atau perintah dari pelatih.
-                </li>
-                <li>2) Ketika pelatih memberikan aba-aba maka atlet segera melakukan gerakan ude uke disambung dengan gerakan nidan tsuki.</li>
-                <li>3) Repetisi dan set sesuai dengan program latihan yang didesain oleh pelatih.
-                </li>
-              </ol>
-              Setelah selesai melakukan gerakan maka atlet kembali ke posisi awal yaitu kamae.
-            </p>
-            <Image src={img1} loading="eager" alt="Dojo Speed" />
-            <p class=" text-lg">
-              Tujuan dari gerakan ini yaitu untuk melatih peningkatan kecepatan gerak pukulan atlet setelah menangkis serangan lawan.
-            </p>
-          </div>
-        </div>
+    </a>
+
+    <a href="model_latihan/page3"
+      class="active:text-blue-300 bg-gray-200 hover:bg-slate-700 rounded-2xl inline-flex items-center w-full font-semibold text-start text-slate-700 hover:text-gray-200 py-3 px-4 disabled:opacity-50 disabled:pointer-events-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="flex-shrink-0 size-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-start ms-2 text-lg"
+          >3. Ude Uke + Nidan Tsuki</span
+        >
       </div>
-      
-      <div class="hs-accordion mb-4 border-gray-200 bg-white hs-accordion-active:bg-gray-100 border border-2 hs-accordion-active:border-0 hs-accordion-active:shadow-md rounded-xl" id="hs-active-bordered-heading-one">
-        <button class="hs-accordion-toggle hs-accordion-active:text-blue-800 inline-flex items-center w-full font-semibold text-start text-slate-700 py-3 px-4 hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none" aria-controls="hs-basic-active-bordered-collapse-one">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0 size-6 hs-accordion-active:hidden block">
-            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0 size-6 hs-accordion-active:block hidden rotate-90">
-            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd" />
-          </svg>
-          <div class="flex flex-col">
-            <span class="text-start ms-2 text-lg">4.	Kombinasi Tangkisan (1 hitungan 3 tangkisan dalam 1 kali nafas)</span>
-          </div>
-        </button>
-        <div id="hs-basic-active-bordered-collapse-one" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-one">
-          <div class="pb-4 px-5 text-lg">
-            <p class=" text-lg">
-              Cara melakukan gerakan:
-              <ol>
-                <li>1)	Atlet menunggu instruksi pelatih dalam posisi gedan barrai.
-                </li>
-                <li>2) Ketika pelatih telah memberikan aba-aba melalui pluit maka atlet segera melakukan gerakan kombinasi ini dalam 1 tarikan nafas.  Gerakan ini diulangi sesuai banyaknya aba-aba yang berikan oleh pelatih berdasarkan program latihan yang diberikan</li>
-                <li>3) Posisi badan saat melalukan gerakan ini yaitu posisi kamae dengan kuda-kuda senkutsu dachi.
-                </li>
-              </ol>
-            </p>
-            <Image src={img1} loading="eager" alt="Dojo Speed" />
-            <p class=" text-lg">
-              Gerakan ini merupakan gabungan dari 3 gerakan dasar dalam beladiri karate. Fungsi dalam gerakan ini meningkatkan kecepatan gerak pada atlet karate. Pada gerakan ini inti gerak terjadi pada pinggul sebagai poros badan menghasilkan kime, selain itu, kecepatan tangan saat mengeluarkan 3 gerakan dalam satu kali tarikan nafas hingga menarik kembali tangan ke posisi awal. Hasil gerakan dapat terlihat saat atlet melakukan kumite.
-            </p>
-          </div>
-        </div>
+    </a>
+
+    <a href="model_latihan/page4"
+      class="active:text-blue-300 bg-gray-200 hover:bg-slate-700 rounded-2xl inline-flex items-center w-full font-semibold text-start text-slate-700 hover:text-gray-200 py-3 px-4 disabled:opacity-50 disabled:pointer-events-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="flex-shrink-0 size-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-start ms-2 text-lg"
+          >4. Kombinasi Tangkisan (1 hitungan 3 tangkisan dalam 1 kali nafas)</span
+        >
       </div>
-      
-      <div class="hs-accordion mb-4 border-gray-200 bg-white hs-accordion-active:bg-gray-100 border border-2 hs-accordion-active:border-0 hs-accordion-active:shadow-md rounded-xl" id="hs-active-bordered-heading-one">
-        <button class="hs-accordion-toggle hs-accordion-active:text-blue-800 inline-flex items-center w-full font-semibold text-start text-slate-700 py-3 px-4 hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none" aria-controls="hs-basic-active-bordered-collapse-one">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0 size-6 hs-accordion-active:hidden block">
-            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0 size-6 hs-accordion-active:block hidden rotate-90">
-            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd" />
-          </svg>
-          <div class="flex flex-col">
-            <span class="text-start ms-2 text-lg">5.	Kombinasi Sprint & Tendangan</span>
-          </div>
-        </button>
-        <div id="hs-basic-active-bordered-collapse-one" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-one">
-          <div class="pb-4 px-5 text-lg">
-            <p class=" text-lg">
-              Cara melakukan gerakan:
-              <ol>
-                <li>1)	Posisi awal atlet yaitu posisi start di titik A siap melakukakan sprint.
-                </li>
-                <li>2) Saat pelatih memberikan aba-aba melalui pluit maka atlet segera berlari menuju titik B.</li>
-                <li>3) Setibanya atlet di titik B maka atlet melanjutkan gerakan tendangan (mae geri. Mawashi geri, nidan geri, sambon geri).
-                </li>
-                <li>4)	Atlet kembali ke posisi semula. 
-                </li>
-              </ol>
-            </p>
-            <Image src={img1} loading="eager" alt="Dojo Speed" />
-            <p class=" text-lg">
-              Pada gerakan ini gerakan kaki lebih dominan dilatih, gerakan ini berfungsi untuk meningkatkan kecepatan gerakan tendangan atlet.
-            </p>
-          </div>
-        </div>
+    </a>
+
+    <a href="model_latihan/page5"
+      class="active:text-blue-300 bg-gray-200 hover:bg-slate-700 rounded-2xl inline-flex items-center w-full font-semibold text-start text-slate-700 hover:text-gray-200 py-3 px-4 disabled:opacity-50 disabled:pointer-events-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="flex-shrink-0 size-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-start ms-2 text-lg"
+          >5. Kombinasi Sprint & Tendangan</span
+        >
       </div>
-      
-      <div class="hs-accordion mb-4 border-gray-200 bg-white hs-accordion-active:bg-gray-100 border border-2 hs-accordion-active:border-0 hs-accordion-active:shadow-md rounded-xl" id="hs-active-bordered-heading-one">
-        <button class="hs-accordion-toggle hs-accordion-active:text-blue-800 inline-flex items-center w-full font-semibold text-start text-slate-700 py-3 px-4 hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none" aria-controls="hs-basic-active-bordered-collapse-one">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0 size-6 hs-accordion-active:hidden block">
-            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0 size-6 hs-accordion-active:block hidden rotate-90">
-            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd" />
-          </svg>
-          <div class="flex flex-col">
-            <span class="text-start ms-2 text-lg">6.	Variasi Gerakan Angkat Kaki + Maegeri (Drill + Maegeri)</span>
-          </div>
-        </button>
-        <div id="hs-basic-active-bordered-collapse-one" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-one">
-          <div class="pb-4 px-5 text-lg">
-            <p class=" text-lg">
-              Cara melakukan gerakan:
-              <ol>
-                <li>1)	Posisi awal atlet yaitu posisi start di titik A siap melakukakan sprint.
-                </li>
-                <li>2) Saat pelatih memberikan aba-aba melalui pluit maka atlet segera berlari menuju titik B.</li>
-                <li>3) Setibanya atlet di titik B maka atlet melanjutkan gerakan tendangan (mae geri. Mawashi geri, nidan geri, sambon geri).
-                </li>
-                <li>4)	Atlet kembali ke posisi semula. 
-                </li>
-              </ol>
-            </p>
-            <Image src={img1} loading="eager" alt="Dojo Speed" />
-            <p class=" text-lg">
-              Pada gerakan ini gerakan kaki lebih dominan dilatih, gerakan ini berfungsi untuk meningkatkan kecepatan gerakan tendangan atlet.
-            </p>
-          </div>
-        </div>
+    </a>
+
+    <a href="model_latihan/page6"
+      class="active:text-blue-300 bg-gray-200 hover:bg-slate-700 rounded-2xl inline-flex items-center w-full font-semibold text-start text-slate-700 hover:text-gray-200 py-3 px-4 disabled:opacity-50 disabled:pointer-events-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="flex-shrink-0 size-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-start ms-2 text-lg"
+          >6. Variasi Gerakan Angkat Kaki + Maegeri (Drill + Maegeri)</span
+        >
       </div>
-      
-    </div>
-    
+    </a>
+
+    <a href="model_latihan/page7"
+      class="active:text-blue-300 bg-gray-200 hover:bg-slate-700 rounded-2xl inline-flex items-center w-full font-semibold text-start text-slate-700 hover:text-gray-200 py-3 px-4 disabled:opacity-50 disabled:pointer-events-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="flex-shrink-0 size-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-start ms-2 text-lg"
+          >7. Variasi Angkat Kaki + Mawashi Geri</span
+        >
+      </div>
+    </a>
+
+    <a href="model_latihan/page8"
+      class="active:text-blue-300 bg-gray-200 hover:bg-slate-700 rounded-2xl inline-flex items-center w-full font-semibold text-start text-slate-700 hover:text-gray-200 py-3 px-4 disabled:opacity-50 disabled:pointer-events-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="flex-shrink-0 size-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-start ms-2 text-lg"
+          >8. Posisi Kamae Gerakan Maegeri 3x dalam 1 hitungan</span
+        >
+      </div>
+    </a>
+
+    <a href="model_latihan/page9"
+      class="active:text-blue-300 bg-gray-200 hover:bg-slate-700 rounded-2xl inline-flex items-center w-full font-semibold text-start text-slate-700 hover:text-gray-200 py-3 px-4 disabled:opacity-50 disabled:pointer-events-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="flex-shrink-0 size-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-start ms-2 text-lg"
+          >9. Posisi Kamae Gerakan Mawashi 3x dalam 1 hitungan</span
+        >
+      </div>
+    </a>
+
+    <a href="model_latihan/page10"
+      class="active:text-blue-300 bg-gray-200 hover:bg-slate-700 rounded-2xl inline-flex items-center w-full font-semibold text-start text-slate-700 hover:text-gray-200 py-3 px-4 disabled:opacity-50 disabled:pointer-events-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="flex-shrink-0 size-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-start ms-2 text-lg"
+          >10. Lempar Bola: Menghindar + Menyerang Tsuki</span
+        >
+      </div>
+    </a>
+
+    <a href="model_latihan/page11"
+      class="active:text-blue-300 bg-gray-200 hover:bg-slate-700 rounded-2xl inline-flex items-center w-full font-semibold text-start text-slate-700 hover:text-gray-200 py-3 px-4 disabled:opacity-50 disabled:pointer-events-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="flex-shrink-0 size-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-start ms-2 text-lg"
+          >11. 4 Penjuru Mata Angin + Tsuki</span
+        >
+      </div>
+    </a>
+
+    <a href="model_latihan/page12"
+      class="active:text-blue-300 bg-gray-200 hover:bg-slate-700 rounded-2xl inline-flex items-center w-full font-semibold text-start text-slate-700 hover:text-gray-200 py-3 px-4 disabled:opacity-50 disabled:pointer-events-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="flex-shrink-0 size-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-start ms-2 text-lg"
+          >12. Menangkap Bola Bekel</span
+        >
+      </div>
+    </a>
+
+    <a href="model_latihan/page13"
+      class="active:text-blue-300 bg-gray-200 hover:bg-slate-700 rounded-2xl inline-flex items-center w-full font-semibold text-start text-slate-700 hover:text-gray-200 py-3 px-4 disabled:opacity-50 disabled:pointer-events-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="flex-shrink-0 size-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-start ms-2 text-lg"
+          >13. Sentuhan Tangan 1 kali hingga 2 kali selanjutnya Pukulan</span
+        >
+      </div>
+    </a>
+
+    <a href="model_latihan/page14"
+      class="active:text-blue-300 bg-gray-200 hover:bg-slate-700 rounded-2xl inline-flex items-center w-full font-semibold text-start text-slate-700 hover:text-gray-200 py-3 px-4 disabled:opacity-50 disabled:pointer-events-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="flex-shrink-0 size-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-start ms-2 text-lg"
+          >14. Gerakan 4 Penjuru Mata Angin + Tsuki dan Geri</span
+        >
+      </div>
+    </a>
+
+    <a href="model_latihan/page15"
+      class="active:text-blue-300 bg-gray-200 hover:bg-slate-700 rounded-2xl inline-flex items-center w-full font-semibold text-start text-slate-700 hover:text-gray-200 py-3 px-4 disabled:opacity-50 disabled:pointer-events-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="flex-shrink-0 size-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-start ms-2 text-lg"
+          >15. Gerakan 4 Penjuru Mata Angin + Geri</span
+        >
+      </div>
+    </a>
+
+    <a href="model_latihan/page16"
+      class="active:text-blue-300 bg-gray-200 hover:bg-slate-700 rounded-2xl inline-flex items-center w-full font-semibold text-start text-slate-700 hover:text-gray-200 py-3 px-4 disabled:opacity-50 disabled:pointer-events-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="flex-shrink-0 size-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-start ms-2 text-lg"
+          >16. Sentuhan Kaki 1 kali hingga 3 kali selanjutnya Menendang</span
+        >
+      </div>
+    </a>
+     
+    <a href="model_latihan/page17"
+      class="active:text-blue-300 bg-gray-200 hover:bg-slate-700 rounded-2xl inline-flex items-center w-full font-semibold text-start text-slate-700 hover:text-gray-200 py-3 px-4 disabled:opacity-50 disabled:pointer-events-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="flex-shrink-0 size-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-start ms-2 text-lg"
+          >17. Sentuhan Tangan dan Kaki 1 kali selanjutnya Memukul dan Menendang</span
+        >
+      </div>
+    </a>
   </div>
 </Page>

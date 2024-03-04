@@ -1,0 +1,50 @@
+---
+import Page from "../../layouts/Page.astro";
+import { Image } from "astro:assets";
+import img1 from "../../assets/page/page4.jpg";
+---
+
+<Page title="Model Latihan">
+  <div
+    class="flex flex-col bg-white shadow-md rounded-xl px-4 py-6 my-5 mx-4 overflow-y-auto gap-4"
+  >
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2"
+      >Kombinasi Tangkisan (1 hitungan 3 tangkisan dalam 1 kali nafas)
+      </span
+    >
+    <div class="flex flex-col bg-white shadow-md rounded-2xl gap-2 bg-cover">
+      <iframe
+        title="Video"
+        class="w-full rounded-2xl"
+        height="200"
+        src="https://drive.google.com/file/d/1R6yA-ha-phu99hxFXuIe-B5rBMuIksxJ/preview"
+        allow="encrypted-media"
+        allowfullscreen></iframe>
+    </div>
+
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2 mt-1"
+      >Penjelasan</span
+    >
+
+    <div class="pb-4 px-5 text-lg">
+      <p class="text-lg">
+        Cara melakukan gerakan:
+        <ol>
+          <li>
+            1) Atlet menunggu instruksi pelatih dalam posisi gedan barrai. 
+          </li>
+          <li>
+            2) Ketika pelatih telah memberikan aba-aba melalui pluit maka atlet segera melakukan gerakan kombinasi ini dalam 1 tarikan nafas.  Gerakan ini diulangi sesuai banyaknya aba-aba yang berikan oleh pelatih berdasarkan program latihan yang diberikan.
+          </li>
+          <li>
+            3) Posisi badan saat melalukan gerakan ini yaitu posisi kamae dengan kuda-kuda senkutsu dachi.
+          </li>
+        </ol>
+      </p>
+      <Image src={img1} loading="lazy" alt="Dojo Speed" class="w-full"/>
+      <p class="text-lg">
+        Gerakan ini merupakan gabungan dari 3 gerakan dasar dalam beladiri karate. Fungsi dalam gerakan ini meningkatkan kecepatan gerak pada atlet karate. Pada gerakan ini inti gerak terjadi pada pinggul sebagai poros badan menghasilkan kime, selain itu, kecepatan tangan saat mengeluarkan 3 gerakan dalam satu kali tarikan nafas hingga menarik kembali tangan ke posisi awal. Hasil gerakan dapat terlihat saat atlet melakukan kumite.
+      </p>
+    </div>
+  </div>
+</Page>

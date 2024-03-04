@@ -1,0 +1,52 @@
+---
+import Page from "../../layouts/Page.astro";
+import { Image } from "astro:assets";
+import img1 from "../../assets/page/page2.jpg";
+---
+
+<Page title="Model Latihan">
+  <div
+    class="flex flex-col bg-white shadow-md rounded-xl px-4 py-6 my-5 mx-4 overflow-y-auto gap-4"
+  >
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2"
+      >Age Uke + Nidan Tsuki</span
+    >
+    <div class="flex flex-col bg-white shadow-md rounded-2xl gap-2 bg-cover">
+      <iframe
+        title="Video"
+        class="w-full rounded-2xl"
+        height="200"
+        src="https://drive.google.com/file/d/1R31y7jIW3XBtD2DSYxrZ2PWLIZ5duXCx/preview"
+        allow="encrypted-media"
+        allowfullscreen></iframe>
+    </div>
+
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2 mt-1"
+      >Penjelasan</span
+    >
+
+    <div class="pb-4 px-5 text-lg">
+      <p class="text-lg">
+        Cara melakukan gerakan:
+        <ol>
+          <li>
+            1) Atlet dalam posisi kamae. Kemudian setelah mendapat perintah atau
+            aba-aba dari pelatih maka atlet segera melakukan gerakn age uke
+            ditambah gerakan nidan tsuki.
+          </li>
+          <li>
+            2) Jumlah repetisi dan set gerakan sesuai dengan program latihan
+            yang dibuat oleh pelatih.
+          </li>
+        </ol>
+        Setelah melakukan gerakan atlet kembali ke posisi awal kamae. Dapat dilihat
+        pada gambar di bawah pola gerak model tersebut.
+      </p>
+      <Image src={img1} loading="lazy" alt="Dojo Speed" class="w-full"/>
+      <p class="text-lg">
+        Tujuan dari gerakan ini yaitu untuk melatih peningkatan kecepatan gerak
+        pukulan atlet setelah menangkis serangan lawan.
+      </p>
+    </div>
+  </div>
+</Page>

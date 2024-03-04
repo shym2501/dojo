@@ -1,0 +1,61 @@
+---
+import Page from "../../layouts/Page.astro";
+import { Image } from "astro:assets";
+import img1 from "../../assets/page/page1.jpg";
+---
+
+<Page title="Model Latihan">
+  <div
+    class="flex flex-col bg-white shadow-md rounded-xl px-4 py-6 my-5 mx-4 overflow-y-auto gap-4"
+  >
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2"
+      >Kombinasi Sprint dan Tsuki</span
+    >
+    <div class="flex flex-col bg-white shadow-md rounded-2xl gap-2 bg-cover">
+      <iframe
+        title="Video"
+        class="w-full rounded-2xl"
+        height="200"
+        src="https://drive.google.com/file/d/1QklF4yy-28YrfGDITOTkr68ceUS3Bo7r/preview"
+        allow="encrypted-media"
+        allowfullscreen></iframe>
+    </div>
+
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2 mt-1"
+      >Penjelasan</span
+    >
+
+    <div class="pb-4 px-5 text-lg">
+      <p class="text-lg">
+        Cara melakukan gerakan:
+        <ol>
+          <li>
+            1) Mempersiapkan 2 cuns di 2 titik yang berbeda (titik a dan titik
+            b)
+          </li>
+          <li>
+            2) Atlet melakukan persiapan (diawali tiupan pluit untuk melakukan
+            tsuki) dan dilanjut pluit untuk start sprint dari titik a menuju
+            titik b.
+          </li>
+          <li>
+            3) Setelah tiba dititik b atlet melakukan tsuki kembali sebagai
+            akhir dari 1 repetisi latihan.
+          </li>
+        </ol>
+        Pola gerak model:
+      </p>
+      <Image src={img1} loading="lazy" alt="Dojo Speed" class="w-full" />
+      <p class="text-lg">
+        Latihan ini memiliki fungsi untuk meningkatkan kecepatan gerak atlet
+        karate. Fokus gerakan yang dilatih adalah kecepatan kaki dan tangan,
+        fungsi gerakan ini lebih spesifik dapat terlihat saat seorang atlet
+        melakukan gerakan pukulan (gyaku tsuki, kisame tsuki, uraken tsuki dan
+        kombinasi gerakan kisame gyaku tsuki) sebagai toque atlet saat
+        bertanding kumite. Melibatkan banyak kinerja otot hamstring saat sprint
+        dapat melatih otot yang ada di kaki untuk terbiasa melakukan gerakan
+        dengan cepat.
+      </p>
+    </div>
+  </div>
+</Page>

@@ -1,0 +1,58 @@
+---
+import Page from "../../layouts/Page.astro";
+import { Image } from "astro:assets";
+import img1 from "../../assets/page/page16.jpg";
+---
+
+<Page title="Model Latihan">
+  <div
+    class="flex flex-col bg-white shadow-md rounded-xl px-4 py-6 my-5 mx-4 overflow-y-auto gap-4"
+  >
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2"
+      >Sentuhan Kaki 1 kali hingga 3 kali selanjutnya Menendang
+    </span>
+    <div class="flex flex-col bg-white shadow-md rounded-2xl gap-2 bg-cover">
+      <iframe
+        title="Video"
+        class="w-full rounded-2xl"
+        height="200"
+        src="https://drive.google.com/file/d/1S4g23G6xxDbI9WN2OpMi9fYpJVC4IZ-Y/preview"
+        allow="encrypted-media"
+        allowfullscreen></iframe>
+    </div>
+
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2 mt-1"
+      >Penjelasan</span
+    >
+
+    <div class="pb-4 px-5 text-lg">
+      <p class="text-lg">
+        Cara melakukan gerakan:
+        <ol>
+          <li>1) Atlet pada posisi kamae.</li>
+          <li>
+            2) Pemberi sensor sentuhan berdiri di belakang atlet dan siap
+            menyentuh bagian kaki atlet.
+          </li>
+          <li>
+            3) Saat petugas memberikan sensor dari sentuhan maka dengan waktu
+            reaksi yang sangat singkat atlet segera mengeluarkan tendangan
+            (geri).
+          </li>
+          <li>
+            4) Setelah memberikan reaksi melalui pukulan atau tendangan maka
+            atlet kembali ke posisi semula.
+          </li>
+        </ol>
+        <span class="font-semibold">Catatan :</span>
+        1 kali sentuhan maka atlet merespon dengan tendangan maegeri dan
+        2 kali sentuhan makan atlet mengeluarkan tendangan mawashi geri, dan 3 kali
+        sentuhan maka atlet mengeluarkan tendangan ushiro geri.
+      </p>
+      <Image src={img1} loading="lazy" alt="Dojo Speed" class="w-full" />
+      <p class="text-lg">
+        Latihan ini dikembangkan untuk mendapatkan latihan kecepatan reaksi atlet yang lebih efektif melalui sensor sentuhan, di samping itu diberikan program latihan sesuai kebutuhan atau target untuk mencapai kecepatan reaksi maksimal. Hal ini akan terlihat hasilnya ketika atlet bertanding.
+      </p>
+    </div>
+  </div>
+</Page>

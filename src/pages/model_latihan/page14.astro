@@ -1,0 +1,53 @@
+---
+import Page from "../../layouts/Page.astro";
+import { Image } from "astro:assets";
+import img1 from "../../assets/page/page14.jpg";
+---
+
+<Page title="Model Latihan">
+  <div
+    class="flex flex-col bg-white shadow-md rounded-xl px-4 py-6 my-5 mx-4 overflow-y-auto gap-4"
+  >
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2"
+      >Gerakan 4 Penjuru Mata Angin + Tsuki dan Geri
+      </span
+    >
+    <div class="flex flex-col bg-white shadow-md rounded-2xl gap-2 bg-cover">
+      <iframe
+        title="Video"
+        class="w-full rounded-2xl"
+        height="200"
+        src="https://drive.google.com/file/d/1RoieOhh8di7zkVu1At5xQmIc8mB1ko8C/preview"
+        allow="encrypted-media"
+        allowfullscreen></iframe>
+    </div>
+
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2 mt-1"
+      >Penjelasan</span
+    >
+
+    <div class="pb-4 px-5 text-lg">
+      <p class="text-lg">
+        Cara melakukan gerakan:
+        <ol>
+          <li>
+            1) Atlet dalam posisi kamae diantara 4 posisi kuns. 
+          </li>
+          <li>
+            2) Ketika aba-aba diberikan oleh pelatih maka atlet segera melakukan gerakan pukulan (gyaku/kisame tsuki dan ditambah geri) pada masing-masing kuns.
+          </li>
+          <li>
+            3) Jarak kuns dan atlet masing-masing 1 meter.           
+          </li>
+          <li>
+            4) Atlet kembali ke posisi semula ketika selesai melakukan gerakan.       
+          </li>
+        </ol>
+      </p>
+      <Image src={img1} loading="lazy" alt="Dojo Speed" class="w-full"/>
+      <p class="text-lg">
+        Latihan ini melatih kecepatan reaksi atlet terhadap sensor bunyi yang diberikan oleh pelatih.
+      </p>
+    </div>
+  </div>
+</Page>

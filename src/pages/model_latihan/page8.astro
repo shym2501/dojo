@@ -1,0 +1,47 @@
+---
+import Page from "../../layouts/Page.astro";
+import { Image } from "astro:assets";
+import img1 from "../../assets/page/page8.jpg";
+---
+
+<Page title="Model Latihan">
+  <div
+    class="flex flex-col bg-white shadow-md rounded-xl px-4 py-6 my-5 mx-4 overflow-y-auto gap-4"
+  >
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2"
+      >Posisi  Kamae Gerakan Maegeri 3x dalam 1 hitungan
+      </span
+    >
+    <div class="flex flex-col bg-white shadow-md rounded-2xl gap-2 bg-cover">
+      <iframe
+        title="Video"
+        class="w-full rounded-2xl"
+        height="200"
+        src="https://drive.google.com/file/d/1RT82CTIJ3MEBMxnrioQ8zwmQPARWrQJJ/preview"
+        allow="encrypted-media"
+        allowfullscreen></iframe>
+    </div>
+
+    <span class="mx-2 font-semibold text-xl text-slate-700 -mb-2 mt-1"
+      >Penjelasan</span
+    >
+
+    <div class="pb-4 px-5 text-lg">
+      <p class="text-lg">
+        Cara melakukan gerakan:
+        <ol>
+          <li>
+            1) Atlet dalam posisi kamae mempersiapkan diri menerima aba-aba untuk melakukan gerakan maegeri 1 hitungan pada 1 kaki.
+          </li>
+          <li>
+            2) Setelah pelatih memberikan aba-aba maka atlet segera melakukan gerakan maegeri 1kaki dalam 1 tarikan nafas.
+          </li>
+        </ol>
+      </p>
+      <Image src={img1} loading="lazy" alt="Dojo Speed" class="w-full"/>
+      <p class="text-lg">
+        Gerakan ini lebih banyak melatih kaki dengan tujuan memperoleh kecepatan tendangan yang maksimal atlet. Pada gerakan ini variasi ditentukan oleh pelatih agar atlet tidak merasa bosan saat melalukan gerakan ini.
+      </p>
+    </div>
+  </div>
+</Page>
