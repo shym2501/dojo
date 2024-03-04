@@ -1,0 +1,31 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-blue-50">
+	  <header class="flex flex-wrap w-full bg-slate-700 text-sm py-4 shadow-md">
+	    <nav class="max-w-[85rem] w-full flex items-center justify-center">
+	      <a class="text-2xl font-bold text-white" href="/">DOJO SPEED
+	      </a>
+	    </nav>
+	  </header>
+	  
+		<slot />
+		
+		<script src="../../node_modules/preline/dist/preline.js"></script>
+	</body>
+</html>
