@@ -5,7 +5,22 @@ import { Image } from "astro:assets";
 ---
 
 <Page title="Instrumen Tes Kecepatan Gerak">
-  <a href="../assets/gerak.pdf" type="application/octet-stream" download="Instrumen_Tes_Kecepatan_Gerak.pdf" class="flex flex-col bg-white hover:bg-gray-200 hover:text-blue-600 shadow-md rounded-xl p-4 md:p-5 my-5 mx-8 text-xl">
+  <div class="flex flex-col bg-white shadow-md rounded-xl p-4 md:p-5 my-5 mx-8 text-lg">
+    <h5 class="text-center font-semibold mb-3 text-xl">INSTRUMEN TES KECEPATAN GERAK BELADIRI KARATE</h5>
+    <ul>
+      <li>Tujuan : untuk mengukur kecepatan gerak pukulan dan tendangan atlet beladiri karate</li>
+      <li>Fasilitas dan alat:
+      <ul>
+        <li>- Matras karate 4x4</li>
+        <li>- Tiang (tempat sensor pukulan dan tendangan)</li>
+        <li>- Alat pengukur kecepatan gerak pukulan dan tendangan</li>
+        <li>- Alat tulis untuk mencatat hasil tes</li>
+      </ul>
+      </li>
+    </ul>
+  </div>
+  
+  <a href="https://drive.google.com/uc?export=download&id=1TACwhY0zm6wVfrlki0-QK_HY_QXICK51" type="application/octet-stream" download="Instrumen_Tes_Kecepatan_Gerak.pdf" class="flex flex-col bg-white hover:bg-gray-200 hover:text-blue-600 shadow-md rounded-xl p-4 md:p-5 my-5 mx-8 text-xl">
 
     <Image src={img} loading="eager" class="w-full flex justify-center" alt="Dojo Speed" />
     <span class="mt-4 inline-flex font-medium justify-center">

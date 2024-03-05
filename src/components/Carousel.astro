@@ -1,8 +1,7 @@
 ---
-import { Image, Picture } from "astro:assets";
-import img1 from "../assets/carousel-1.png";
-import img2 from "../assets/carousel-2.png";
-import img3 from "../assets/carousel-3.png";
+import { Image } from "astro:assets";
+import img1 from "../assets/carousel-1.jpg";
+import img2 from "../assets/carouse-2.jpg";
 ---
 
 <!-- Slider -->
@@ -20,11 +19,6 @@ import img3 from "../assets/carousel-3.png";
       <div class="hs-carousel-slide">
         <div class="flex justify-center h-full">
           <Image src={img2} loading="eager" alt="Dojo Speed" />
-        </div>
-      </div>
-      <div class="hs-carousel-slide">
-        <div class="flex justify-center h-full">
-          <Image src={img3} loading="eager" alt="Dojo Speed" />
         </div>
       </div>
     </div>
