@@ -1,32 +1,50 @@
 ---
 import Page from '../layouts/Page.astro';
 import img from "../assets/icon-doc.png";
+import tes from "../assets/tes.jpg";
 import { Image } from "astro:assets";
 ---
 
 <Page title="Instrumen Tes Kecepatan Gerak">
   <div class="flex flex-col bg-white shadow-md rounded-xl p-4 md:p-5 my-5 mx-8 text-lg">
-    <h5 class="text-center font-semibold mb-3 text-xl">INSTRUMEN TES KECEPATAN GERAK BELADIRI KARATE</h5>
+    <h5 class="text-center font-semibold mb-3 text-xl text-blue-700">INSTRUMEN TES KECEPATAN GERAK BELADIRI KARATE</h5>
     <ul>
-      <li>Tujuan : untuk mengukur kecepatan gerak pukulan dan tendangan atlet beladiri karate</li>
-      <li>Fasilitas dan alat:
-      <ul>
-        <li>- Matras karate 4x4</li>
-        <li>- Tiang (tempat sensor pukulan dan tendangan)</li>
-        <li>- Alat pengukur kecepatan gerak pukulan dan tendangan</li>
-        <li>- Alat tulis untuk mencatat hasil tes</li>
-      </ul>
+      <li><span class="font-semibold">Tujuan : </span>untuk mengukur kecepatan gerak pukulan dan tendangan atlet beladiri karate.</li>
+      <li><span class="font-semibold">Fasilitas dan alat : </span>
+        <ul>
+          <li>- Matras karate 4x4</li>
+          <li>- Tiang (tempat sensor pukulan dan tendangan)</li>
+          <li>- Alat pengukur kecepatan gerak pukulan dan tendangan</li>
+          <li>- Alat tulis untuk mencatat hasil tes</li>
+        </ul>
+      </li>
+      <li><span class="font-semibold">Petugas :  </span>
+        <ul>
+          <li>- Pencatat hasil tes</li>
+          <li>- Pemantau layar sensor kecepatan</li>
+        </ul>
+      </li>
+      <li><span class="font-semibold">Pelaksanaan : </span>
+        <ul>
+          <li>- Testi berdiri dengan posisi kamae tepat di depan tiang yang telah ditentukan dan sudah dipasangi target.</li>
+          <li>- Alat tes kecepatan gerak dipastikan terpasang pada tangan/kaki testi.</li>
+          <li>- Pada aba-aba maka testi mulai melakukan pukulan atau tendangan ( sesuai dengan gerakan yang akan diukur kecepatannya)</li>
+          <li>- Tes dilakukan sebanyak 3 kali pengulangan gerak dan hasil tes kecepatan paling cepat dari antara 3x pengulangan menjadi data kecepatan gerak dari testi.</li>
+        </ul>
+        <Image src={tes} loading="lazy" class="flex self-center w-full" alt="Dojo Speed"/>
+      </li>
+      <li><span class="font-semibold">Penilaian :  </span>skor berdasarkan waktu tercepat atlet saat melalukan pukulan dan tendangan.
       </li>
     </ul>
   </div>
   
-  <a href="https://drive.google.com/uc?export=download&id=1TACwhY0zm6wVfrlki0-QK_HY_QXICK51" type="application/octet-stream" download="Instrumen_Tes_Kecepatan_Gerak.pdf" class="flex flex-col bg-white hover:bg-gray-200 hover:text-blue-600 shadow-md rounded-xl p-4 md:p-5 my-5 mx-8 text-xl">
+  <a href="https://drive.google.com/uc?export=download&id=1TACwhY0zm6wVfrlki0-QK_HY_QXICK51" type="application/octet-stream" download="Instrumen_Tes_Kecepatan_Gerak.pdf" class="flex flex-col bg-white hover:bg-gray-200 hover:text-blue-600 shadow-md rounded-xl p-4 md:p-5 my-5 mb-8 mx-8 text-xl justify-items-center">
 
-    <Image src={img} loading="eager" class="w-full flex justify-center" alt="Dojo Speed" />
+    <Image src={img} loading="lazy" class="flex self-center" alt="Dojo Speed" width="100"/>
     <span class="mt-4 inline-flex font-medium justify-center">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 me-2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
       </svg>
-      Download File</span>
+      Download Form Penilaian</span>
   </a>
 </Page>
