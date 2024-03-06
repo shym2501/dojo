@@ -1,9 +1,12 @@
 ---
 import Page from '../layouts/Page.astro';
+import img from "../assets/logo.png";
+import { Image } from "astro:assets";
 ---
 
 <Page title="About">
   <div class="flex flex-col bg-white shadow-md rounded-xl p-4 md:p-5 my-5 mx-6 text-lg">
+    <Image src={img} loading="eager" class="flex self-center rounded-2xl mb-3" alt="Dojo Speed"/>
     <span class="font-semibold text-xl">Dojo Speed <span class="font-normal text-lg">v.1.0.0</span>
     </span>
     <span>Author : Maria Herlinda Dos Santo</span>
